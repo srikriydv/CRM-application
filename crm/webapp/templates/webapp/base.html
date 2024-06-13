@@ -10,7 +10,7 @@
     </head>
     <body>
         <!-- Create a navbar-->
-        
+        {% include "webapp/navbar.html" %}
 
          <div class="container">
             <br>
@@ -21,8 +21,12 @@
             
             {% endblock content %}
          </div>
-         <script src="{% static 'js/app.js' %}"></script>
-        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+             <!-- Bootstrap JS and dependencies -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <!-- Include any custom JS files here -->
+            <script src="{% static 'js/app.js' %}"></script>
+
+        </body>
 </html>
